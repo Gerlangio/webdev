@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de formulário</title>
+</head>
+
+<body>
+    <form name="form1" method="post" action="recebe_dados.php">
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" id="nome" size="40" />
+        &nbsp;
+        Sexo:
+        <input type="radio" name="sexo" id="m" value="M" /><label for="m">M</label>
+        <input type="radio" name="sexo" id="f" value="F" /><label for="f">F</label>
+        <br /><br />
+        <label for="email">E-mail:</label>
+        <input type="text" name="email" id="email" size="40" />
+        <br /><br />
+        <label for="nav">Navegador preferido:</label>
+        <select name="browser" id="nav">
+            <option selected>Browser</option>
+            <option> Google Chrome</option>
+            <option> Internet Explorer</option>
+            <option> Mozilla Firefox</option>
+            <option> Opera</option>
+            <option> Apple Safari</option>
+        </select>
+        <br /><br />
+        Esportes que aprecia:<br />
+        <input type="checkbox" name="box[]" id="fut" value="Futebol" />
+        <label for="fut">futebol</label>
+        <input type="checkbox" name="box[]" id="bas" value="Basquete" />
+        <label for="bas">basquete</label>
+        <input type="checkbox" name="box[]" id="ten" value="Tênis" />
+        <label for="ten">tênis</label>
+        <input type="checkbox" name="box[]" id="vol" value="Volei" />
+        <label for="vol">volei</label>
+        <input type="checkbox" name="box[]" id="han" value="Handebol" />
+        <label for="han">handebol</label>
+        <input type="checkbox" name="box[]" id="nen" value="Nenhum deles" />
+        <label for="nen">nenhum deles</label><br /><br>
+        <label for="com">Comentário sobre o esporte preferido:</label><br />
+        <textarea name="comentario" id="com" cols="50" rows="5"></textarea>
+        <br />
+        <input type="submit" name="enviar" value="Enviar" />&nbsp;&nbsp;
+        <input type="reset" name="limpar" value="Limpar" />
+    </form>
+</body>
+
+</html>
